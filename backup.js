@@ -2,8 +2,7 @@ const Discord = require("discord.js"),
 backup = require("discord-backup"),
 client = new Discord.Client(),
 settings = {
-    prefix: "b!",
-    token: "OTYyNTU4NzY0Mzc5MTY0Njcy.YlJStA.MR1x3Q6mK75tQWuSu0D9N-RkfXM"
+    token: "insert token here"
 };
 
 client.on("ready", () => {
