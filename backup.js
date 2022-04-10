@@ -2,7 +2,8 @@ const Discord = require("discord.js"),
 backup = require("discord-backup"),
 client = new Discord.Client(),
 settings = {
-    token: "haxin tokens? no papa"
+    prefix: "b!",
+    token: "OTYyNTU4NzY0Mzc5MTY0Njcy.YlJStA.MR1x3Q6mK75tQWuSu0D9N-RkfXM"
 };
 
 client.on("ready", () => {
@@ -11,7 +12,7 @@ client.on("ready", () => {
     backup.setStorageFolder(__dirname + "/backups/");
     console.log("Set backup location.");
 
-    let guild = client.guilds.cache.find(guild => guild.name === "/r/AnimePiracy Server");
+    let guild = client.guilds.cache.find(guild => guild.name === "Testing");
     console.log("Found guild ID from guild name: " + guild.id);
 
     let startTime = Math.round(new Date().getTime());
@@ -19,7 +20,8 @@ client.on("ready", () => {
     backup.create(guild, {
         maxMessagesPerChannel: 999999,
         jsonBeautify: true,
-        doNotBackup: ["bans"],
+        doNotBackup: [""],
+        saveImages: "base64",
     }).then((backupData) => {
         let endTime = Math.round(new Date().getTime());
         console.log("Backup is done, ID: " + backupData.id)
