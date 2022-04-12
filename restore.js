@@ -11,7 +11,7 @@ client.on("ready", () => {
     backup.setStorageFolder(__dirname + "/backups/");
     console.log("Set backup location.");
 
-    let guild = client.guilds.cache.find(guild => guild.name === "Testing");
+    let guild = client.guilds.cache.find(guild => guild.name === "My Server");
     console.log("Found guild ID from guild name: " + guild.id);
 
     let startTime = Math.round(new Date().getTime());
