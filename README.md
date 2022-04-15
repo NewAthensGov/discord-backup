@@ -16,6 +16,7 @@
 2. Backing up is fairly quick, typically taking anywhere between 10 seconds and 10 minutes, depending on the size of your server.
 3. Restoring is fairly slow because the discord API is slow. It can take hours to fully recreate a server, so make sure you're in a place where you can leave your computer running for a while until it finishes.
 4. When you run the restore script on a server, it will completely wipe that server first, then it will paste in everything from the backup.
+5. Make sure you give the bot full permissions in your server, or you'll get an error when you run the script. I recommend not giving it permissions to ping though, because messages with pings in them will ping again when the bot restores them.
 
 ## How to not backup specific channels?
 * Remove "Text Permissions > Read Messages" permissions for the bot user on each channel that you do not want backed up. If the bot cannot read the channel, it cannot back it up.
