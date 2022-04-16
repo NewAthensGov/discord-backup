@@ -1,5 +1,5 @@
 ## About
-This is a Node.js project that allows you to quickly and easily set up your own discord bot, which you can use to create a backup file of any server you invite it to, just by you running a script on your computer. In the case of a crippling raid or if your server gets deleted, you can simply run the restore script to paste everything from a backup file into any server that your bot is in.
+This is a Node.js project that allows you to quickly and easily set up your own discord bot, which you can use to generate a local json backup file of any server you invite it to, just by you running the `backup.js script` on your computer. In the case of a crippling raid or if your server gets deleted, you can simply run the `restore.js` script to paste everything from a local json backup file into any server that your bot is in.
 
 ## Getting started
 1. Download these files.
