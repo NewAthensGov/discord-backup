@@ -1,6 +1,6 @@
 ## Getting started
 1. Download these files.
-2. Install Node.js on the computer that will be running the scripts. [Windows guide](https://www.webucator.com/article/how-to-install-nodejs-on-windows/) [Mac guide](https://www.webucator.com/article/how-to-install-nodejs-on-a-mac/)
+2. Install Node.js on the computer that will be running the scripts. [Windows guide](https://www.webucator.com/article/how-to-install-nodejs-on-windows/) / [Mac guide](https://www.webucator.com/article/how-to-install-nodejs-on-a-mac/)
 3. Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications/).
 4. Go to the Bot tab, and click Add Bot.
 5. Click Reset Token to generate your secret bot token.
