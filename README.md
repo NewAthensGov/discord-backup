@@ -1,15 +1,17 @@
 ## Getting started
-1. Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications/).
-2. Go to the Bot tab, and click Add Bot.
-3. Click Reset Token to generate your secret bot token.
-4. Add the secret bot token to `settings["token"]` in `backup.js`.
-5. Go back to the General Informaiton tab and get your APPLICATION ID.
-6. Add the bot to the server you wish to backup with the following URL:
+1. Download these files.
+2. Install Node.js on the computer that will be running the scripts. [Windows guide](https://www.webucator.com/article/how-to-install-nodejs-on-windows/) [Mac guide](https://www.webucator.com/article/how-to-install-nodejs-on-a-mac/)
+3. Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications/).
+4. Go to the Bot tab, and click Add Bot.
+5. Click Reset Token to generate your secret bot token.
+6. Add the secret bot token to `settings["token"]` in `backup.js`.
+7. Go back to the General Informaiton tab and get your APPLICATION ID.
+8. Add the bot to the server you wish to backup with the following URL:
     > https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_APPLICATION_ID_HERE&permissions=0&scope=bot
-7. Add the name of the target server to the `let guild =` variable in `backup.js`.
-8. Open command prompt or terminal and navigate to the folder that holds these scripts using this command: `cd path/to/folder`.
-9. Run the following command in command prompt/terminal: `node backup.js` to create your first backup.
-10. To restore from a backup, add the secret bot token and the name of the server you'd like to overwrite into the `restore.js` file and repeat step 8 and 9, but with `restore.js` instead of the backup script.
+9. Add the name of the target server to the `let guild =` variable in `backup.js`.
+10. Open command prompt or terminal and navigate to the folder that holds these scripts using this command: `cd path/to/folder`.
+11. Run the following command in command prompt/terminal: `node backup.js` to create your first backup.
+12. To restore from a backup, add the secret bot token and the name of the server you'd like to overwrite into the `restore.js` file and repeat step 10 and 11, but with `restore.js` instead of the backup script.
 
 ## Tips
 1. DO NOT SHARE YOUR BOT TOKEN WITH ANYONE ELSE!!! Anyone who has it can control your bot! That means they could make backups of any server you've added your bot to, and they could even wipe your servers by restoring from a blank backup file. VERY DANGEROUS, SO KEEP IT SECRET! If anyone gets it, you can reset the token by clicking Reset Token under the Bot tab of your bot in the discord developer portal. Once you do that, the old token won't work anymore and you'll be secure again.
